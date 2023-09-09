@@ -1,0 +1,112 @@
+/* src/App.css */
+
+body {
+  font-family: Arial, sans-serif;
+ /* background-image: url("img3.jpg"); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: auto; /* Change from 'cover' to 'auto' */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+  
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+  
+h1 {
+  font-family: 'Montserrat', sans-serif; /* Change 'Your Desired Font' to the font you want to use */
+  font-size: 36px; /* Change the font size to your preference */
+  color: #FFFAFA; /* Change the color to your desired color code */
+  margin-bottom: 20px;
+}
+  .movie-app-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .movie-list {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-y: auto;
+    max-height: 300px;
+  }
+  
+ /* src/App.css or your CSS file */
+
+/* ... (existing styles) */
+
+
+.movie-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+.movie-image {
+  max-width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+/* ... (other styles) */
+
+  
+  .movie-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .movie-form {
+    flex: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  .label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "year": 1994,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "year": 1972,
+      "availableOn": "Zee5"
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "year": 2008,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "year": 1994,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 5,
+      "title": "Schindler's List",
+      "year": 1993,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 6,
+      "title": "The Lord of the Rings: The Return of the King",
+      "year": 2003,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 7,
+      "title": "Forrest Gump",
+      "year": 1994,
+      "availableOn": "Prime video"
+    },
+    {
+      "id": 8,
+      "title": "Inception",
+      "year": 2010,
+      "availableOn": "HBO MAx and Netflix"
+    },
+    {
+      "id": 9,
+      "title": "The Matrix",
+      "year": 1999,
+      "availableOn": "Max or Peacock"
+    },
+    {
+      "id": 10,
+      "title": "The Silence of the Lambs",
+      "year": 1991,
+      "availableOn": "Max"
+    }
+  ]
+  
