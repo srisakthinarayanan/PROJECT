@@ -6,10 +6,8 @@ import './App.css';
 import SearchBar from './SearchBar';
 import MovieList from './MovieList';
 import MovieForm from './MovieForm';
-
-// Import the JSON data
+import ProfileIcon from './ProfileIcon'; // Import the ProfileIcon component
 import movieData from './movies.json';
-
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -18,7 +16,6 @@ const App = () => {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
-    // Use the imported JSON data
     setMovies(movieData);
     setFilteredMovies(movieData);
   }, []);
@@ -38,7 +35,6 @@ const App = () => {
   };
 
   const handleMovieSave = (updatedMovie) => {
-    // Update the movie in the list
     const updatedMovies = movies.map((movie) =>
       movie.id === updatedMovie.id ? updatedMovie : movie
     );
@@ -49,7 +45,6 @@ const App = () => {
   };
 
   const handleMovieDelete = (movieId) => {
-    // Delete the movie from the list
     const updatedMovies = movies.filter((movie) => movie.id !== movieId);
 
     setMovies(updatedMovies);
@@ -58,10 +53,7 @@ const App = () => {
   };
 
   const handleMovieCreate = (newMovie) => {
-    // Generate a new unique ID (you can use a library like uuid for this)
     const newMovieWithId = { ...newMovie, id: movies.length + 1 };
-
-    // Add the new movie to the list
     const updatedMovies = [...movies, newMovieWithId];
 
     setMovies(updatedMovies);
@@ -70,7 +62,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Movie Search</h1>
+      <header>
+        <h1>Movie Search</h1>
+      
+        <ProfileIcon /> {/* Add the ProfileIcon component */}
+      </header>
       <SearchBar onSearch={handleSearch} />
       <div className="movie-app-container">
         <MovieList
